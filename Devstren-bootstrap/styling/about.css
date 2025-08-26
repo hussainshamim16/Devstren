@@ -1,0 +1,258 @@
+/* custom classes */
+.all-p {
+    font-family: satoshi;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* end */
+.about-hero {
+    height: 100vh;
+    background-image: url(../public/figma-images/about-us/about-heroback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-hero-heading {
+    text-align: center;
+    font-size: 6rem;
+    background: -webkit-linear-gradient(337deg, #ffffff 0% 50%, #42B0A8 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500;
+}
+
+a.custom-cta {
+    background: radial-gradient(32.29% 32.29% at 50% 21.87%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(53.2% 22.92% at 49.6% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%), #0F8B82;
+    background-blend-mode: overlay, overlay, overlay, normal;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px #42B0A866;
+    color: #fff;
+    border-radius: 100px;
+    padding: 18px 57px;
+    font-family: Satoshi;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    letter-spacing: -2%;
+    text-decoration: none;
+    border: 1px solid #0F8B82;
+}
+
+a.custom-cta:hover {
+    background: transparent;
+    border: 1px solid #0F8B82;
+    color: #0F8B82;
+}
+
+section.abouter {
+    /* width: 1320px; */
+    transform: translateY(-110px);
+    background: white;
+    border-radius: 80px;
+    padding-top: 21px;
+    height: 800px;
+}
+
+.abouter .about-heading-section {
+    width: 1440px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.about-content-section .image img {
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: -43rem 10rem 200px -9rem #13BDB0;
+}
+
+.mission-sec {
+    height: 452px;
+    background-image: url(../public/figma-images/about-us/about-heroback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+.custom-w-80 {
+    width: 81%;
+
+
+}
+
+.our-value {
+    /* border: 1px darksalmon solid; */
+    height: 800px;
+    margin-top: 100px;
+
+    background-image: url(../public/figma-images/about-us/back-321.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.value-heading {
+    text-align: left;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(40deg, #011311 0%, #42B0A8 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+
+.values-container {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-wrapper {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5CB8B2;
+}
+
+/* Center logo */
+.circle-center {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    animation: 5s linear infinite movment;
+}
+
+.circle-center img {
+    max-width: 170px;
+    box-shadow: 0rem 0rem 25rem 12rem #98E7E2;
+    border-radius: 300px;
+}
+
+/* Value cards placed around the circle */
+.value-card {
+    position: absolute;
+    width: 260px;
+    height: 84px;
+    text-align: left;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.values-container:after {
+    background-size: cover;
+    content: '';
+    background-position: center;
+    background-image: url(../public/figma-images/about-us/vision-left.png);
+    position: relative;
+}
+
+.value-card img {
+    width: 80px;
+    margin-bottom: 8px;
+}
+
+.value-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #42B0A8;
+    font-family: 'clash-display';
+}
+
+.value-card p {
+    font-size: 15px;
+    color: #011311;
+    font-weight: 500;
+    font-family: 'satoshi';
+}
+
+/* Position each card using transform: rotate */
+.value-1 {
+    top: 70px;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.value-2 {
+    top: 47%;
+    right: -220px;
+    transform: translate(0, -50%);
+}
+
+.value-3 {
+    top: 85%;
+    right: -120px;
+    transform: translate(0, -50%);
+}
+
+.value-4 {
+    text-align: end;
+    flex-direction: row-reverse;
+    bottom: 95px;
+    left: 0%;
+    transform: translate(-50%, 50%);
+}
+
+.value-5 {
+    text-align: end;
+    flex-direction: row-reverse;
+    top: 47%;
+    left: -220px;
+    transform: translate(0, -50%);
+}
+
+.value-6 {
+    text-align: end;
+    top: 10%;
+    flex-direction: row-reverse;
+    left: -80px;
+    transform: translate(0, -50%);
+}
+
+.animi {
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+    border-radius: 50%;
+    /* animation: 20s linear infinite spin; */
+}
+
+.animier {
+    /* animation: 50s linear infinite spin; */
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes movment {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
