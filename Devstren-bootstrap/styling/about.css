@@ -38,6 +38,7 @@ a.custom-cta {
     letter-spacing: -2%;
     text-decoration: none;
     border: 1px solid #0F8B82;
+    cursor: pointer;
 }
 
 a.custom-cta:hover {

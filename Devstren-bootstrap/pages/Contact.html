@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devstren || Contact</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- custom  -->
+    <link rel="stylesheet" href="../styling/bootrstrap.css">
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/contact.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Contact hero-section -->
+    <div class="contact-hero  w-100 container-fluid d-flex justify-content-center align-items-center flex-column">
+        <div class="container w-50 d-flex justify-content-center align-items-center flex-column gap-lg-2">
+            <h1 class="contact-hero-heading">Let’s Talk About Your Next Project</h1>
+            <p class="all-p text-center text-light">Whether you need a custom website, a powerful software solution, or
+                a design that elevates your brand, we’re here to help. Get in touch with our team today.</p>
+            <a class="custom-cta">Start Your Project</a>
+        </div>
+    </div>
+    <!-- Section - About -->
+    <section class="contact-form  container-fluid">
+        <div class="logo-center d-flex justify-content-center align-items-center">
+            <img src="../public/figma-images/contect-us/contact-center-logo.png" alt="center-logo">
+        </div>
+        <div class="container p-0">
+            <div class="row g-4">
+                <div class="image col-lg-6">
+                    <img src="../public/figma-images/contect-us/left-contact-img.png" alt="Contact-right-hand-image"
+                        class="Contact-right-hand-image">
+                </div>
+                <div class="col-lg-6 col-md-6 bg-light-green p-5 form-parent">
+                    <form class="form-7">
+                        <div class="mb-3">
+                            <div class="row g-2">
+                                <div class="col  mb-3">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" class="form-control" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="col  mb-3">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" class="form-control" placeholder="Last Name"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-2">
+                                <div class="col  mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter email"
+                                        required>
+                                </div>
+                                <div class="col  mb-3">
+                                    <label for="phone-number">Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="Enter number" required
+                                        id="phone-number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="project-type">Project Type</label>
+                            <select class="form-select" required id="project-type">
+                                <option value="" disabled selected>Select your project</option>
+                                <option value="web">Web Development</option>
+                                <option value="app">App Development</option>
+                                <option value="ui-ux-design">UI UX Design</option>
+                                <option value="seo">SEO</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="3" placeholder="What Can We Help You With?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="button-sub custom-cta">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- custom js file  -->
+    <script src="../scripts/swiper.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+    <!-- bootstrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+        defer></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

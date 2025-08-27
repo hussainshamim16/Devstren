@@ -1,0 +1,178 @@
+/* custom classes */
+.all-p {
+    font-family: satoshi;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* end */
+.contact-hero {
+    height: 100vh;
+    background-image: url(../public/figma-images/about-us/about-heroback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-hero-heading {
+    text-align: center;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(337deg, #ffffff 0% 50%, #42B0A8 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500;
+}
+
+.custom-cta {
+    background: radial-gradient(32.29% 32.29% at 50% 21.87%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(53.2% 22.92% at 49.6% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%), #0F8B82;
+    background-blend-mode: overlay, overlay, overlay, normal;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px #42B0A866;
+    color: #fff;
+    border-radius: 100px;
+    padding: 18px 57px;
+    font-family: Satoshi;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    letter-spacing: -2%;
+    text-decoration: none;
+    border: 1px solid #0F8B82;
+    cursor: pointer;
+}
+.custom-cta:hover {
+    background: transparent;
+    border: 1px solid #0F8B82;
+    color: #0F8B82;
+}
+
+
+
+section.contact-form {
+    /* width: 1320px; */
+    transform: translateY(-70px);
+    background: white;
+    border-radius: 80px;
+    padding-top: 21px;
+    height: 800px;
+}
+
+section.contact-form .container {
+    height: 780px;
+}
+
+.contact-form .about-heading-section {
+    width: 1440px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.about-content-section .image img {
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: -43rem 10rem 200px -9rem #13BDB0;
+}
+
+.Contact-right-hand-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 99999999999999999999999999999999999 */
+
+::placeholder {
+    font-family: satoshi;
+    color: #7EAEAB;
+    text-transform: capitalize;
+}
+
+.bg-light-green {
+    background-color: #E7FAF9;
+
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #646464;
+}
+
+.form-parent {
+    border-radius: 40px;
+}
+
+.form-7 {
+    font-family: satoshi, sans-serif;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #011311;
+    border-radius: 0;
+    background: transparent;
+    color: #011311;
+    padding: 1rem 0rem;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #0F8B82;
+    box-shadow: none;
+    background: transparent;
+}
+
+.form-select {
+    border: none;
+    border-bottom: 1px solid #011311;
+    border-radius: 0;
+    background: transparent;
+    color: #011311;
+
+    appearance: none;
+    background-image: url('data:image/svg+xml,<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.74609 1.5769L7.2811 6.3212L12.0254 1.5769" stroke="%2342B0A8" stroke-width="1.58143" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 18px;
+
+    padding: .375rem 2.5rem 0.8rem 0rem;
+}
+
+.form-select:focus {
+    border-bottom: 2px solid #0F8B82;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + 9rem + calc(var(--bs-border-width) * 2));
+}
+
+button.button-sub {
+    padding: 13px 70px;
+    margin-top: 15px;
+}
+.logo-center img{
+   width: 6%;
+    transform: translateY(-70px);
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .bg-dark,
+    .bg-light-green {
+        border-radius: 0;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hand-image img {
+        width: 200px;
+    }
+}
