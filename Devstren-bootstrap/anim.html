@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Logo Animation with Anime.js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styling/style.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0F2B2A;
+}
+
+.animation-container {
+    position: relative;
+    height: auto;
+    background: linear-gradient(135deg, #0F2B2A, #1A403F);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: auto;
+    overflow: hidden    ;
+    opacity: 0;
+}
+
+.left-hand {
+    left: -200px;
+}
+
+.right-hand {
+    right: -200px;
+    transform: translateY(-50%) scaleX(-1); /* Flip horizontally for symmetry */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    /* background: radial-gradient(circle, #0F8B82 0%, #002D28 70%); */
+    border-radius: 10px;
+    padding: 10px;
+    /* box-shadow: 0 0 20px rgba(0, 166, 155, 0.5); */
+}
+</style>
+<body>
+    <div class="animation-container text-center">
+        <img src="./public/figma-images/footer/left.png" alt="Left Hand" class="hand left-hand" data-position="left">
+        <img src="./public/figma-images/footer/right.png" alt="Right Hand" class="hand right-hand" data-position="right">
+        <img src="./public/figma-images/footer/center-logo.png" alt="Logo" class="logo">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- <script src="./scripts/animation.js"></script> -->
+</body>
+<script>
+    // Animate hands converging
+anime.timeline({
+    easing: 'easeOutExpo'
+})
+.add({
+    targets: '.left-hand',
+    translateX: 200,
+    opacity: [0, 1],
+    duration: 1500
+})
+.add({
+    targets: '.right-hand',
+    translateX: -200,
+    opacity: [0, 1],
+    duration: 1500
+}, 0) // Start with the left-hand animation
+.add({
+    targets: '.logo',
+    opacity: [0, 1],
+    scale: [0.8, 1.1],
+    duration: 500,
+    easing: 'easeOutElastic(1, 0.3)',
+    complete: function() {
+        // Pulse effect after scaling
+        anime({
+            targets: '.logo',
+            scale: [1.1, 1],
+            duration: 300,
+            easing: 'easeOutQuad',
+            direction: 'alternate',
+            loop: 2
+        });
+    }
+}, '-=1000'); // Overlap with hand animation by 1000ms
+</script>
+</html>
