@@ -234,9 +234,10 @@
      </section>
     <!-- Why choose Area End -->
 
-    <!-- Testimonials Area Start -->
+    <!-- Testimonial Area Start -->
     <?php get_template_part( 'loop-templates/testimonial-slider' ); ?>
-    <!-- Testimonials Area End -->
+    <!-- Testimonial Area End -->
+
     
     <!-- Blogs Area Start -->
     <?php get_template_part( 'loop-templates/blogs' ); ?>
